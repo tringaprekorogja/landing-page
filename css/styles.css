@@ -16,7 +16,6 @@ body {
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
-    border-top: #cc1;
 }
 
 
@@ -69,10 +68,16 @@ section {
     padding-left: 0;
     margin: 0;
     text-align: right;
+    border:solid black;
 }
 
 .navbar__menu li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    border: solid black;
+    background-color: white;
 }
 
 .navbar__menu .menu__link {

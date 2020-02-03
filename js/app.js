@@ -13,6 +13,46 @@
  * 
 */
 
+const firstSection = document.querySelector('#section1');
+const secondSection = document.querySelector('#section2');
+const thirdSection = document.querySelector('#section3');
+const sections = document.querySelectorAll('section');
+const nav = document.querySelector('#navbar__list');
+
+
+
+function makeNav () {   
+    console.log(nav);
+    for(let section of sections) {  
+        const anchoring = document.createElement('a');
+        anchoring.textContent = section.dataset.nav;
+        anchoring.setAttribute('href','#');
+        const newElement = document.createElement('li');
+        newElement.appendChild(anchoring);  
+        nav.appendChild(newElement);
+    }
+}
+
+makeNav();
+
+
+    nav.addEventListener ('click', function(event){
+    console.log('hello')  
+    })
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
 /**
  * Define Global Variables
  * 
@@ -34,6 +74,12 @@
 */
 
 // build the nav
+
+   
+
+   
+
+
 
 
 // Add class 'active' to section when near top of viewport
