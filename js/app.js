@@ -85,7 +85,11 @@ function scrollinTo() {
         anchoring.addEventListener('click', function (event) {
             event.preventDefault();
             const sectionItem = document.querySelector('.its__' + anchoring.id);
-            sectionItem.scrollIntoView(false);
+            const y = sectionItem.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth'
+              });
         })
 
     }
