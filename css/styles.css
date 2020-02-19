@@ -248,7 +248,7 @@ section.your-active-class .landing__container::after {
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 420px) {
     .navbar__menu ul{
         display: flex;
         flex-direction: row;
@@ -258,6 +258,8 @@ section.your-active-class .landing__container::after {
         align-items: baseline;
  
     }  
+
+  
     .menu-item-active .menu__link {
         background:black;
         color: white;
